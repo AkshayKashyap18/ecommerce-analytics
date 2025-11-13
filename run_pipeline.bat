@@ -1,0 +1,13 @@
+echo Running e-commerce ETL pipeline...
+
+echo Generating synthetic data...
+python src\generate_data.py
+
+echo Ingesting into SQLite...
+python src\ingest.py
+
+echo Running SQL analytics...
+python src\run_query.py
+
+echo Pipeline complete!
+pause
