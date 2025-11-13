@@ -16,8 +16,10 @@ logs/*
 # Environment variables
 .env
 
-# Ignore all CSVs except raw input
+# Ignore all CSVs in data/ EXCEPT those in data/raw/
 data/*.csv
+data/processed/*
+!data/raw/
 !data/raw/*.csv
 
 # Editor/IDE folders
