@@ -2,17 +2,21 @@
 __pycache__/
 *.pyc
 
-# Virtual environment (DO NOT upload venv to GitHub)
+# Virtual environment
 venv/
 
-# Databases and logs
-*.db
-*.log
+# Ignore files inside db/ but keep folder
+db/*
+!db/.gitkeep
+
+# Ignore files inside logs/ but keep folder
+logs/*
+!logs/.gitkeep
 
 # Environment variables
 .env
 
-# CSV files (ignore all except raw data)
+# Ignore all CSVs except raw input
 data/*.csv
 !data/raw/*.csv
 
