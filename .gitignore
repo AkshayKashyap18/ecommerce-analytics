@@ -1,0 +1,25 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environment (DO NOT upload venv to GitHub)
+venv/
+
+# Databases and logs
+*.db
+*.log
+
+# Environment variables
+.env
+
+# CSV files (ignore all except raw data)
+data/*.csv
+!data/raw/*.csv
+
+# Editor/IDE folders
+.vscode/
+.cursor/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
